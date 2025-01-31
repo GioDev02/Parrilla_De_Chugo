@@ -134,3 +134,50 @@
 .favorite-card:hover .card-text {
     color: #83280D;
 }
+
+/* Estilo para los botones debajo de la imagen */
+.botones-portada .btn {
+    background-color: #83280D; /* Color de fondo para los botones */
+    color: white;
+    border: 2px solid #FF8D06; /* Borde de los botones */
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 30px; /* Bordes redondeados */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold; /* Peso de fuente más fuerte */
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efecto Hover */
+.botones-portada .btn:hover {
+    background-color: #FF8D06; /* Cambia el color de fondo al hacer hover */
+    border-color: #83280D;  /* Cambia el color del borde al hacer hover */
+    transform: scale(1.1); /* Efecto de escala */
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al hacer hover */
+}
+
+/* Icono de los botones */
+.botones-portada .btn i {
+    margin-right: 10px;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajustar el tamaño de los botones en dispositivos móviles */
+    .botones-portada .btn {
+        font-size: 14px; /* Reducir tamaño de fuente */
+        padding: 12px 25px; /* Reducir el padding */
+    }
+
+    /* Ajustar el tamaño de los iconos en dispositivos móviles */
+    .botones-portada .btn i {
+        font-size: 18px; /* Reducir el tamaño del icono */
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <%- include('./partials/head') %>
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+</head>
+<body>
+    <div class="layout">
+        
+        <!-- <main class="layout__main"> -->
+            
+
+            <header class="main__header">
+                <%-include('./partials/navigation')%>
+            </header>
+
+            <div class="bodyindex-container">
+                <%- include('./partials/bodyindex') %>   
+            </div>
+            <%- include('./partials/bot') %>
+            <footer >
+                <%-include('./partials/footer')%> 
+            </footer>
+        <!-- </main> -->
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Estilo para el footer */
+footer {
+    background-color: #83280D; /* Color de fondo personalizado */
+    color: white;
+    padding: 20px 0;
+}
+
+footer h4,
+footer h5 {
+    font-weight: bold;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los iconos */
+footer .fa {
+    color: white;
+    margin-right: 10px;
+}
+
+footer .fa:hover {
+    color: #FF8D06; /* Cambia el color al hacer hover */
+}
+
+/* Estilo para el copyright */
+footer .row.mt-4 {
+    margin-top: 20px;
+}
+
+footer .row.mt-4 p {
+    margin-bottom: 0;
+}
+
+/* .bg-custom{
+    padding: 0;
+} */

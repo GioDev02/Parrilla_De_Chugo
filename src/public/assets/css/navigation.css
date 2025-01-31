@@ -1,0 +1,190 @@
+.logo {
+    width: 40px; /* Mantiene el tamaño original */
+    height: 40px; /* Mantiene el tamaño original */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    border: 2px solid transparent; /* Elimina cualquier borde blanco */
+    background-color: transparent; /* Asegura que el fondo sea transparente */
+    padding: 0; /* Elimina cualquier espacio alrededor */
+}
+
+.navbar{
+    background-color: #83280D;
+}
+
+
+/* Barra lateral solo en pantallas grandes */
+/* Barra lateral solo en pantallas grandes usando operadores */
+
+/* Barra lateral para pantallas grandes */
+@media (min-width: 992px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        padding-top: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar .list-group-item {
+        color: white;
+    }
+
+    .sidebar .list-group-item a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .sidebar .list-group-item:hover {
+        background-color: #FF8D06;
+    }
+
+    /* Botón de menú solo visible en móviles */
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: white;
+    }
+}
+
+/* Estilo de los enlaces en la barra de navegación */
+.navbar-nav .nav-item .nav-link {
+    color: #fff; /* Color de texto por defecto */
+    font-size: 1rem; /* Tamaño de texto */
+    padding: 8px 12px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas para un estilo más profesional */
+}
+
+/* Efecto de hover en los enlaces de la barra de navegación */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(131, 40, 13, 0.8); /* Fondo oscuro con opacidad al hacer hover */
+    color: #fff; /* Mantiene el color blanco del texto */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 4px 8px #00000033; /* Sombra para destacar el hover */
+    border: 2px solid #422118; /* Borde dorado suave al hacer hover */
+}
+
+/* Efecto para el logo cuando se pasa el mouse */
+.navbar-brand:hover .logo {
+    transform: scale(1.05); /* Aumenta ligeramente el logo al hacer hover */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Agregar opacidad al fondo del logo */
+.navbar-brand:hover {
+    background-color: rgba(131, 40, 13, 0.8); /* Fondo oscuro con opacidad en la zona del logo */
+    padding: 8px 15px; /* Añadir un pequeño espacio adicional para no pegarse al borde */
+    border-radius: 5px; /* Borde redondeado para el logo */
+}
+
+/* Barra lateral solo en pantallas grandes */
+@media (min-width: 992px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        padding-top: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar .list-group-item {
+        color: white;
+    }
+
+    .sidebar .list-group-item a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .sidebar .list-group-item:hover {
+        background-color: #302b26;
+    }
+
+    /* Botón de menú solo visible en móviles */
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: white;
+    }
+}
+
+
+
+/* Barra lateral en dispositivos grandes usando la sintaxis moderna con operadores >= */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+/* Barra lateral en dispositivos grandes usando la sintaxis moderna con operadores >= */
+@media (width > 992px) {
+    .navbar-collapse {
+        display: flex !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+/* Para los dispositivos móviles (menú hamburguesa) usando la sintaxis moderna con operadores <= */
+@media (width < 992px) {
+
+    .navbar-collapse {
+        background-color: rgba(131, 40, 13, 0.9); /* Fondo oscuro de la barra lateral */
+    }
+}
+
+
+/* Estilos para el dropdown "Carta Gourmet" */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Muestra el dropdown cuando se pasa el mouse sobre el enlace "Carta Gourmet" */
+    background-color: rgba(131, 40, 13, 0.9); /* Fondo oscuro para el menú desplegable */
+    border-radius: 5px; /* Borde redondeado para el dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para el dropdown */
+    padding: 5px 0; /* Espaciado alrededor de las opciones */
+}
+
+/* Estilo para los enlaces dentro del dropdown */
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno de las opciones */
+    text-transform: uppercase; /* Mayúsculas para las opciones */
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+}
+
+/* Efecto de hover sobre las opciones dentro del dropdown */
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color:  rgba(131, 40, 13, 0.8);; /* Fondo oscuro con opacidad al hacer hover */
+    color: #fff; /* Mantiene el color blanco del texto */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el hover */
+    border: 2px solid  #422118;; /* Borde dorado suave al hacer hover */
+}
+
+/* Estilo cuando se da clic a "Carta Gourmet" */
+.navbar-nav .nav-item.dropdown.show .dropdown-menu {
+    display: block; /* Mantiene el dropdown abierto cuando se hace clic */
+    background-color: rgba(131, 40, 13, 0.9); /* Fondo oscuro cuando se hace clic */
+}
+
+/* Efecto al hacer clic en el enlace "Carta Gourmet" */
+.navbar-nav .nav-item.dropdown.active > a {
+    color: #F1C40F; /* Cambia el color del enlace cuando se activa */
+    background-color: rgba(131, 40, 13, 0.8); /* Fondo oscuro con opacidad cuando se hace clic */
+}

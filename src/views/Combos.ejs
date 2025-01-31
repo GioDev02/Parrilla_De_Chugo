@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title> <!-- Título dinámico con EJS -->
+
+    <!-- Inclusión del archivo de head (contiene las dependencias de Bootstrap y otras configuraciones) -->
+    <%- include('./partials/head') %> 
+</head>
+<body>
+    <header class="main__header">
+    <%- include('./partials/navigation') %> <!-- Menú de navegación -->
+  </header>
+
+  <main class="container mt-3 mb-3">
+
+    <!-- Carrusel de imágenes -->
+    <div id="comboCarousel" class="carousel slide" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/img/combos/portada_combo.png" class="d-block w-100" alt="Combo 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/combos/portada_combo2.jpg" class="d-block w-100" alt="Combo 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/combos/portada_combo3.jpg" class="d-block w-100" alt="Combo 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/combos/portada_combo4.jpg" class="d-block w-100" alt="Combo 4">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/combos/portada_combo5.jpg" class="d-block w-100" alt="Combo 5">
+            </div>
+        </div>
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#comboCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#comboCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Sección de combos -->
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-1"> <!-- Aquí agregamos mt-5 -->
+        <div class="col">
+            <div class="combo-card position-relative">
+                <img src="/assets/img/combos/combo1.jpg" class="img-fluid combo-img" alt="Combo 1">
+                <div class="promotion-overlay">
+                    <p>Disfruta de una deliciosa combinación de mini hamburguesas con los sabores más irresistibles. Este combo incluye una selección de nuestras mejores hamburguesas en tamaño mini, acompañadas de papas fritas crujientes y tu bebida favorita. ¡Perfecto para esos antojos que no puedes dejar pasar!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="combo-card position-relative">
+                <img src="/assets/img/combos/combo2.jpg" class="img-fluid combo-img" alt="Combo 2">
+                <div class="promotion-overlay">
+                    <p> Saborea nuestras hamburguesas más populares en este combo especial. Incluye una de nuestras hamburguesas 1S, elaborada con carne de primera calidad, pan suave y acompañamientos frescos. Todo servido con papas fritas y tu bebida preferida para una experiencia completa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="combo-card position-relative">
+                <img src="/assets/img/combos/combo3.jpg" class="img-fluid combo-img" alt="Combo 3">
+                <div class="promotion-overlay">
+                    <p>Un combo que trae lo mejor de la parrilla: anticuchos tiernos y sabrosos, acompañados de tripita y una porción de la famosa carne "chica". Todo servido con papas fritas crujientes y tu bebida favorita. Un verdadero festín para los amantes de los sabores autóctonos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="combo-card position-relative">
+                <img src="/assets/img/combos/combo4.jpg" class="img-fluid combo-img" alt="Combo 4">
+                <div class="promotion-overlay">
+                    <p>Para los amantes de las alitas crujientes, este combo incluye alitas broaster jugosas y crocantes, acompañadas de una porción de carne "chica". Puedes elegir entre salsa maracuyá o nuestra deliciosa salsa especial. Incluye papas fritas y tu bebida favorita. ¡Una combinación perfecta para disfrutar con amigos o en familia!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('./partials/bot') %>
+    <!-- Pie de página -->
+    <footer>
+        <%- include('./partials/footer') %> 
+    </footer>
+
+    <!-- Bootstrap 5 JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inicializar carrusel -->
+    <script>
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Carrusel de imágenes */
+#comboCarousel {
+    width: 100%;
+    height: 400px; /* Ajusta la altura del carrusel */
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Contenedor de cada imagen del carrusel */
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Establece las imágenes del carrusel a un tamaño fijo */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta las imágenes para cubrir el área del carrusel */
+    object-position: center center; /* Asegura que la imagen esté centrada */
+    border-radius: 15px; /* Redondea las esquinas */
+}
+
+/* Asegura que las imágenes no se distorsionen en dispositivos móviles */
+@media (max-width: 768px) {
+    #comboCarousel {
+        height: 250px; /* Ajusta la altura en dispositivos pequeños */
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+/* Sección de combos */
+.combo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Imagen dentro de cada tarjeta de combo */
+.combo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el cursor */
+.combo-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Superposición en hover */
+.promotion-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 69, 0, 0.85);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Muestra la superposición en hover */
+.combo-card:hover .promotion-overlay {
+    opacity: 1;
+}
+
+/* Efecto también en clic para móviles */
+.combo-card:active .promotion-overlay {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .promotion-overlay {
+        font-size: 14px;
+        padding: 15px;
+    }
+    
+    /* Ajustar el margen entre el carrusel y los combos para pantallas más pequeñas */
+    #comboCarousel {
+        margin-bottom: 15px;
+    }
+    
+    /* Ajustar tamaño de las imágenes del carrusel para pantallas pequeñas */
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+main {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

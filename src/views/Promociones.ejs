@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+    <%- include('./partials/head') %>
+    
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     -->
+    <!-- Estilos personalizados -->
+    <!-- <link rel="stylesheet" href="/assets/css/sobreNosotros.css"> -->
+
+</head>
+<body>
+    <header class="main__header">
+        <%-include('./partials/navigation')%>
+    </header>
+    <main>
+        <section class="promotions-section py-5">
+            <div class="container">
+                <!-- Título con animación -->
+                <div class="promotions-title">
+                    <h2>Promociones Chugo</h2>
+                </div>
+        
+                <div class="row">
+                    <!-- Items de promociones -->
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/bebida_gratis.jpg" class="img-fluid" alt="Promoción 1">
+                            <div class="promotion-overlay">
+                                <p>¡Disfruta una bebida gratis con tu pedido! Si decides pedir uno de nuestros platos principales, disfrutarás de una bebida completamente gratis para acompañarlo. ¡Aprovecha esta oferta especial y haz tu pedido hoy mismo!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Recibe una bebida gratis</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/mitad_precio.jpg" class="img-fluid" alt="Promoción 2">
+                            <div class="promotion-overlay">
+                                <p>Disfruta de tus platos favoritos por la mitad de precio. Esta oferta es ideal para que compartas con amigos y familiares, ¡y hagas rendir aún más tu dinero!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Obtén hasta un 50% de descuento</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/dina.jpg" class="img-fluid" alt="Promoción 3">
+                            <div class="promotion-overlay">
+                                <p>Ven a disfrutar del mejor menú con Dina, tu amiga de siempre, en un ambiente único. No hay nada como compartir una comida deliciosa entre buenos amigos. ¡Te esperamos para hacerlo posible!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Menú especial para disfrutar con Dina</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Resto de promociones -->
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_hambur.jpg" class="img-fluid" alt="Promoción 4">
+                            <div class="promotion-overlay">
+                                <p>Las hamburguesas que preparamos son una verdadera delicia, con ingredientes frescos y un sabor único. Aprovecha nuestra promoción y ven a disfrutar de un descuento especial.</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Disfruta de nuestras hamburguesas irresistibles</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/tequeños_gratis.jpg" class="img-fluid" alt="Promoción 5">
+                            <div class="promotion-overlay">
+                                <p>Cuando vengas a visitarnos la próxima vez, podrás disfrutar de nuestros tequeños gratis, perfectos para acompañar tu comida o para un pequeño antojo. ¡Te esperamos con mucho gusto!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Disfruta de tequeños gratis</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/vale_consumo.jpg" class="img-fluid" alt="Promoción 6">
+                            <div class="promotion-overlay">
+                                <p>Al realizar tu pedido, te obsequiamos un vale que podrás usar en tu próxima visita. Disfruta de más comida por menos dinero y ven a aprovechar nuestra oferta especial.</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Recibe un vale consumo</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/dia_madre.jpg" class="img-fluid" alt="Promoción 7">
+                            <div class="promotion-overlay">
+                                <p>Este Día de la Madre, ven y disfruta de un menú exclusivo que hemos preparado especialmente para las madres. Porque tu mamá merece lo mejor, ¡no faltes a esta cita!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Un Día de la Madre único</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/parrillas_gratis.jpg" class="img-fluid" alt="Promoción 8">
+                            <div class="promotion-overlay">
+                                <p>Por hoy, te ofrecemos una parrillada totalmente gratis con tu pedido. Perfecto para disfrutar en familia o con amigos. ¡Ven y aprovecha esta oferta limitada!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Disfruta de una parrillada gratis</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_leche.jpg" class="img-fluid" alt="Promoción 9">
+                            <div class="promotion-overlay">
+                                <p>Aprovecha el descuento del 20% en todos nuestros productos lácteos, ideales para completar tu comida con un toque delicioso y saludable. ¡No dejes pasar esta oferta!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>20% de descuento en lácteos</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_navidad.jpg" class="img-fluid" alt="Promoción 10">
+                            <div class="promotion-overlay">
+                                <p>Ven a celebrar la Navidad con nosotros y disfruta de un menú exclusivo, lleno de sabores que te harán sentir el espíritu navideño. ¡Te esperamos para compartir esta fecha tan especial!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Menú especial de Navidad</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_trabajador.jpg" class="img-fluid" alt="Promoción 11">
+                            <div class="promotion-overlay">
+                                <p>Si eres trabajador, ven a disfrutar de un descuento especial en tu comida. ¡Te mereces un descanso y un buen plato después de un largo día de trabajo!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Descuento exclusivo para trabajadores</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_ninio.jpg" class="img-fluid" alt="Promoción 12">
+                            <div class="promotion-overlay">
+                                <p>Los niños también tienen su día en nuestro restaurante. Con este descuento especial, podrán disfrutar de sus platos favoritos a un precio más accesible. ¡Ven con los pequeños y disfruten juntos!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Descuento para niños</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_domingo.jpg" class="img-fluid" alt="Promoción 13">
+                            <div class="promotion-overlay">
+                                <p>Este domingo, disfruta de una variedad de descuentos especiales en nuestros platos. Es la oportunidad perfecta para pasar un buen rato con amigos y familia.</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Ofertas de domingo</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_empanada.jpg" class="img-fluid" alt="Promoción 14">
+                            <div class="promotion-overlay">
+                                <p>Disfruta de nuestras empanadas recién hechas con una variedad de rellenos, todo a un precio que te encantará. ¡Ven y prueba una hoy mismo!</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Empanadas a un precio irresistible</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="promotion-item">
+                            <img src="/assets/img/promociones/promo_miercoles.jpg" class="img-fluid" alt="Promoción 15">
+                            <div class="promotion-overlay">
+                                <p>Este miércoles ven y disfruta de las mejores ofertas que tenemos preparadas para ti. No dejes pasar esta oportunidad de saborear nuestros platos a precios increíbles.</p>
+                            </div>
+                            <div class="promotion-price">
+                                <p><strong>Miércoles de oferta</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('./partials/bot') %>
+    <%- include('./partials/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Estilo general de la sección */
+.promotions-section {
+    background-color: #f8f9fa;
+    padding-top: 60px; /* Espacio para el título */
+    width: 100vw; /* Asegura que ocupe todo el ancho del viewport */
+    min-height: 100vh; /* Asegura que ocupe todo el alto del viewport */
+    overflow: hidden; /* Para evitar que se recorte el texto */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo del título con animación */
+.promotions-title {
+    overflow: hidden; /* Ocultar el texto que se desplace fuera del contenedor */
+    position: relative;
+    width: 100%; /* Asegura que el contenedor tenga el 100% del ancho disponible */
+    white-space: nowrap; /* Evitar salto de línea */
+}
+
+/* Estilo para las palabras dentro del título */
+.promotions-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #D35400; /* Naranja cálido */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para el texto */
+    display: inline-block;
+    animation: moveTitle 10s linear infinite; /* Animación rápida de movimiento */
+}
+
+/* Animación de movimiento del texto de izquierda a derecha */
+@keyframes moveTitle {
+    0% {
+        transform: translateX(-100%); /* Comienza fuera del viewport a la izquierda */
+    }
+    100% {
+        transform: translateX(100%); /* Se mueve completamente hacia la derecha, fuera del viewport */
+    }
+}
+
+/* Estilo de los items de promoción */
+.promotion-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%; /* Asegura que las promociones ocupen todo el ancho disponible */
+}
+
+.promotion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.promotion-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.promotion-item:hover {
+    transform: scale(1.05);
+}
+
+.promotion-item:hover .promotion-overlay {
+    opacity: 1;
+}
+
+.promotion-price {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .promotions-title h2 {
+        font-size: 36px; /* Ajusta el tamaño del texto */
+    }
+
+    .promotion-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promotions-title h2 {
+        font-size: 28px; /* Ajuste de tamaño del título para pantallas más pequeñas */
+    }
+
+    .promotion-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promotions-title h2 {
+        font-size: 24px; /* Más pequeño para pantallas muy pequeñas */
+    }
+
+    .promotion-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .promotion-price {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+}
+
+/* Estilo del footer */
+footer {
+    /* background-color: #222; Color original que mencionaste */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Permite que el footer se quede al final */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Asegura que el contenido cubra todo el alto de la página */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegura que el contenido se acomode y el footer esté al final */
+main {
+    flex: 1;
+}

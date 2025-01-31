@@ -1,0 +1,178 @@
+<!-- Portada -->
+<section class="portada">
+    <img src="/assets/img/principales/portada_principal.png" class="img-fluid w-100" alt="Portada de la Parrilla de Chugo">
+</section>
+
+<!-- Botones debajo de la imagen -->
+<div class="botones-portada d-flex justify-content-center mt-4">
+    <a href="/platos" class="btn btn-portada mx-3">
+        <i class="fa fa-cutlery"></i> Platos Gourmet
+    </a>
+    <a href="/bebidas" class="btn btn-portada mx-3">
+        <i class="fa fa-beer"></i> Bebidas
+    </a>
+    <a href="/promociones" class="btn btn-portada mx-3">
+        <i class="fa fa-gift"></i> Promociones
+    </a>
+</div>
+
+<!-- Contenido principal -->
+<main class="container my-5">
+    <h2 class="text-center text-uppercase fw-bold" style="color: #83280D;">Favoritos de nuestros clientes</h2>
+    <div class="row mt-4">
+        <!-- Plato 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card favorite-card">
+                <img src="/assets/img/platos/alitas_barbecue.png" class="card-img-top" alt="Plato favorito" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Plato Especial</h5>
+                    <p class="card-text">Una deliciosa especialidad recomendada por nuestros clientes.</p>
+                    <div class="price">S/ 35.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plato 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card favorite-card">
+                <img src="/assets/img/platos/alitas_maracuya.jpg" class="card-img-top" alt="Plato favorito" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Parrillada Mixta</h5>
+                    <p class="card-text">Lo mejor de la parrilla en un solo plato. sadsadsadsdsadsadsadad</p>
+                    <div class="price">S/ 45.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plato 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card favorite-card">
+                <img src="/assets/img/platos/popcorn_chicken.jpg" class="card-img-top" alt="Plato favorito" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Costillas BBQ</h5>
+                    <p class="card-text">Las costillas más jugosas y sabrosas, recomendadas por nuestros clientes.</p>
+                    <div class="price">S/ 50.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nuevas tarjetas con efectos de hover -->
+    <div class="row mt-4">
+        <!-- Plato 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card favorite-card">
+                <img src="/assets/img/platos/polloalaparrilla.jpg" class="card-img-top" alt="Plato favorito" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Ensalada César</h5>
+                    <p class="card-text">Fresca y deliciosa, acompañada con aderezo César.</p>
+                    <div class="price">S/ 20.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plato 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card favorite-card">
+                <img src="/assets/img/platos/costillas_cerdo_horno.jpg" class="card-img-top" alt="Plato favorito" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Pasta Alfredo</h5>
+                    <p class="card-text">Pasta cremosa con salsa Alfredo, ideal para los amantes de la pasta.</p>
+                    <div class="price">S/ 30.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plato 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card favorite-card">
+                <img src="/assets/img/platos/popcorn.jpg" class="card-img-top" alt="Plato favorito" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza Margherita</h5>
+                    <p class="card-text">La pizza clásica con tomate, albahaca y queso mozzarella.</p>
+                    <div class="price">S/ 28.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Estilos internos -->
+<style>
+    /* Estilo para las tarjetas de los favoritos */
+    .favorite-card {
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    /* Asegurando que las imágenes tengan el mismo tamaño */
+    .favorite-card img {
+        width: 100%;
+        height: 250px; /* Establecer altura fija */
+        object-fit: cover; /* Asegura que las imágenes se ajusten bien */
+        border-bottom: 5px solid #FF8D06;
+    }
+
+    /* Estilo para el texto y el precio */
+    .favorite-card .card-body {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .favorite-card .card-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #83280D;
+        margin-bottom: 10px;
+    }
+
+    .favorite-card .card-text {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    /* Precio con un fondo atractivo y bordes */
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        background-color: #83280D;
+        padding: 10px 20px;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 10px;
+        border: 2px solid #FF8D06;
+        text-transform: uppercase;
+    }
+
+    /* Efecto hover para las tarjetas */
+    .favorite-card:hover {
+        transform: scale(1.05);  /* Efecto de escala */
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+        border: 2px solid #FF8D06;
+        cursor: pointer;
+    }
+
+    /* Efecto de hover para el precio */
+    .favorite-card:hover .price {
+        background-color: #FF8D06;
+        border-color: #83280D;
+        transform: scale(1.1);
+    }
+
+    /* Efecto de hover para el título */
+    .favorite-card:hover .card-title {
+        color: #FF8D06;
+        text-transform: uppercase;
+    }
+
+    /* Efecto de hover para el texto de la descripción */
+    .favorite-card:hover .card-text {
+        color: #83280D;
+    }
+</style>
